@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>아파트 경매 예측 어플</title>
+       <!-- bootstrap css -->
+         <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <!--Jquery Cdn -->
+<!--  참고한 url  https://www.geeksforgeeks.org/flask-form-submission-without-page-reload/-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"
+          integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+          crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(document).on('submit','#address_input',function(e)
+                   {
+      e.preventDefault();
+      $.ajax({
+        type:'POST',
+        url:'/main',
+        data:{
+          address-Input:$("#address-Input").val()
+        },
+        success:function()
+        {
+          alert('saved');
+        }
+      })
+    });
+  </script>
+
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">아파트경매예측</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        </nav>
+        <form action = "http://127.0.0.1:5000/main" method="POST" id = address_input>
+            <div class="address-group">
+                <label for="city-Input">시/도를 입력하세요</label>
+                <input type="text" class="address-city" name="city-Input" id="city-Input" placeholder="시/도를 입력" onkeyup='getaddress()'/><text>시/도</text>
+            </div>
+            <div class="address-group">
+                <label for="gungu-Input">군/구를 입력하세요</label>
+                <input type="text" class="address-gungu"  name="gungu-Input" id="gungu-Input" placeholder="군/구를 입력" onkeyup='getaddress()'/><text>군/구</text>
+            </div>
+            <div class="address-group">
+                <label for="emd-Input">읍/면/동을 입력하세요</label>
+                <input type="text" class="address-emd" name="emd-Input" id="emd-Input" placeholder="읍/면/동을 입력" onkeyup='getaddress()'/>
+            </div>
+            <input type="submit" value="아파트 경매가 보기">
+        </form>
+        <div class="print"> {{city}} {{gungu}} {{emd}} </div>
+    </body>
+</html>
