@@ -10,6 +10,7 @@
 ## 과제 추진 내용
 Swagger를 가지고 Python 과 Python Flask를 결합하여 상호간의 호환을 시도하였으나 기술적인 문제와 함께 참고 자료가 많지 않기 때문에, 이 Swagger 부분을 Bootstrap으로 대체 하여 진행 하는 방법으로 실행가능성을 평가하였다. 이 Bootstrap을 사용하여 이용자가 직접적으로 볼 수 있는 Front-End 분야를 구성하고 있으며, Python과 Python Flask로 구축하는 API 서버로서의 입출력 시스템을 구성하는 것에 현재 집중하고 있다. 또한, 오픈소스에서 가져온 여러 데이터분석에 집중하고 있으며, 일부 분석이 끝난 데이터를 가지고 어떤 방식으로 활용하고 어떤 데이터를 Python 과 Python Flask 와의 연결할지 고려중에 있다.
 이 과제가 완성이 되면, 사용자가 홈페이지를 통해 서울 과 부산 중에 선택하고 원하는 지역의 주소를 작성하여 입력하게 되면, 이렇게 입력된 데이터를 Python 과 Python Flask를 통해 받고 이 Python Flask에서 데이터에 접근 하여 원하는 데이터를 가지고 온다. 이 데이터를 다시 Python Flask를 통해 가지고 오고 사용자가 보는 화면으로 출력해줄 예정이다. 
+
 ![image](https://user-images.githubusercontent.com/101695209/166148627-371557f8-5d3d-4272-9e83-e69c564cf322.png)
 
 
