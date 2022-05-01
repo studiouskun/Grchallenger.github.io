@@ -8,3 +8,6 @@
 # 4) 데이터 파트는 분석 및 데이터 가공 
 
 
+2022년 5월 1일
+최종 데이터를 사용하여 데이콘에 csv 파일 제출하여 test
+![image](https://user-images.githubusercontent.com/101695209/166138310-13b7449d-05a1-4fe6-b648-7a63fca69e66.png)
