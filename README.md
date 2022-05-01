@@ -8,4 +8,3 @@
 # 4) 데이터 파트는 분석 및 데이터 가공 
 
 
-![image](https://user-images.githubusercontent.com/101695209/166138257-708d02b0-04a0-42ad-a7c2-305a75747e1e.png)
