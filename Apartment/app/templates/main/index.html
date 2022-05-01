@@ -1,8 +1,9 @@
-<html>
+<!DOCTYPE html>
     <head>
         <title>아파트 경매 예측 어플</title>
        <!-- bootstrap css -->
-         <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+     <link rel="stylesheet" href="/app/static/css/style.css" type ="text/css">
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
     <!--Jquery Cdn -->
@@ -31,14 +32,18 @@
 
     <body>
         <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand">아파트경매예측</a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+            <div class="container-fluid">
+                <a class="navbar-brand">Apartment Auction Prediction</a>
+            </div>
         </nav>
+        <!--jumbotron start-->
+        <section class="jumbotron">
+            <div class="container">
+                <h1 class="text-center">APARTMENT</h1>
+                <p class="text-center">Auction Prediction</p>
+            </div>
+        </section>
+        <!--jumbotron end-->
         <form action = "http://127.0.0.1:5000/main" method="POST" id = address_input>
             <div class="address-group">
                 <label for="city-Input">시/도를 입력하세요</label>
